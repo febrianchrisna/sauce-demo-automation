@@ -1,4 +1,4 @@
-// Visit Page Using Cy.visit() 
+// Visit Page Using Cy.visit()
 describe("1. Visit page", () => {
   it("Should visit the login page (homepage)", () => {
     cy.visit("https://saucedemo.com/");
