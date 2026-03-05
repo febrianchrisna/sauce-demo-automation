@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-03T04:32:59.391Z",
+    "end": "2026-03-03T04:33:03.359Z",
+    "duration": 3968,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c0ce769-11fd-4ed9-aa98-cdad10653b4e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\basic2.cy.js",
+      "file": "cypress\\e2e\\basic2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f7053cc-f32b-490a-80ae-708848aa825c",
+          "title": "2. cy.get - Mengambil Element",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get element by id -> #user-name",
+              "fullTitle": "2. cy.get - Mengambil Element get element by id -> #user-name",
+              "timedOut": null,
+              "duration": 2526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user-name').type('standard_user');",
+              "err": {},
+              "uuid": "1d7d1e24-541b-4f99-b5f0-31c8ee2e2c9d",
+              "parentUUID": "6f7053cc-f32b-490a-80ae-708848aa825c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "get element by class -> .login_container",
+              "fullTitle": "2. cy.get - Mengambil Element get element by class -> .login_container",
+              "timedOut": null,
+              "duration": 94,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.login_container').should('be.visible');",
+              "err": {},
+              "uuid": "8f0b5a39-5cd0-4982-9a4c-33ecc76aee77",
+              "parentUUID": "6f7053cc-f32b-490a-80ae-708848aa825c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "get element by tag -> input",
+              "fullTitle": "2. cy.get - Mengambil Element get element by tag -> input",
+              "timedOut": null,
+              "duration": 76,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input').should('exist');",
+              "err": {},
+              "uuid": "18b0b6e1-af44-4d4f-b737-62b2705fb8df",
+              "parentUUID": "6f7053cc-f32b-490a-80ae-708848aa825c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "get element by attribute -> input[type=\"password\"]",
+              "fullTitle": "2. cy.get - Mengambil Element get element by attribute -> input[type=\"password\"]",
+              "timedOut": null,
+              "duration": 74,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=\"password\"]').should('exist');",
+              "err": {},
+              "uuid": "f5e07963-eee3-4ff1-9966-71734c37b020",
+              "parentUUID": "6f7053cc-f32b-490a-80ae-708848aa825c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "get element by combined selector -> input#user-name",
+              "fullTitle": "2. cy.get - Mengambil Element get element by combined selector -> input#user-name",
+              "timedOut": null,
+              "duration": 72,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input#user-name').should('exist');",
+              "err": {},
+              "uuid": "3eac0d3d-d98b-466f-8e9b-0fe95dafe40b",
+              "parentUUID": "6f7053cc-f32b-490a-80ae-708848aa825c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d7d1e24-541b-4f99-b5f0-31c8ee2e2c9d",
+            "8f0b5a39-5cd0-4982-9a4c-33ecc76aee77",
+            "18b0b6e1-af44-4d4f-b737-62b2705fb8df",
+            "f5e07963-eee3-4ff1-9966-71734c37b020",
+            "3eac0d3d-d98b-466f-8e9b-0fe95dafe40b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2842,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

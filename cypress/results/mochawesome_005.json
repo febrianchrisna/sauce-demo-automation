@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2026-03-04T03:01:38.216Z",
+    "end": "2026-03-04T03:01:38.549Z",
+    "duration": 333,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5033280c-d371-4b6c-af6c-ddfed9d1ff34",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginPage.cy.js",
+      "file": "cypress\\e2e\\loginPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f17e30f2-68a7-47ca-835c-7af9e8b672ba",
+          "title": "Page Object Model - Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01 - Berhasil login dengan kredensial valid",
+              "fullTitle": "Page Object Model - Login Page TC01 - Berhasil login dengan kredensial valid",
+              "timedOut": null,
+              "duration": 146,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// it() → Mendefinisikan 1 test case individual\n// Parameter 1: Nama test case\n// Parameter 2: Callback berisi langkah-langkah test\nconst {\n  user_name,\n  password\n} = loginData.validLogin;\n// Destructuring → Mengambil user_name dan password dari object loginData.validLogin\n// Contoh: { user_name: \"standard_user\", password: \"secret_sauce\" }\nloginPage.visit();\n// Memanggil method visit() dari LoginPage → membuka halaman login\nloginPage.login(user_name, password);\n// Memanggil method login() → mengisi username, password, lalu klik tombol login\nloginPage.verifyLoginSuccess();\n// Memanggil method verifyLoginSuccess() → memverifikasi bahwa login berhasil\n// Biasanya cek URL atau elemen yang muncul setelah login",
+              "err": {
+                "message": "TypeError: Cannot destructure property 'user_name' of 'loginData.validLogin' as it is undefined.",
+                "estack": "TypeError: Cannot destructure property 'user_name' of 'loginData.validLogin' as it is undefined.\n    at Context.eval (webpack:///./cypress/e2e/loginPage.cy.js:33:16)\n    at runnable.fn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146599:19)\n    at callFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165733:21)\n    at Runnable.run (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165720:7)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:171818:30)\n    at PassThroughHandlerContext.finallyHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "ab239d86-0ccd-4db8-9500-0435de117b56",
+              "parentUUID": "f17e30f2-68a7-47ca-835c-7af9e8b672ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC02 - Gagal login dengan kredensial tidak valid",
+              "fullTitle": "Page Object Model - Login Page TC02 - Gagal login dengan kredensial tidak valid",
+              "timedOut": null,
+              "duration": 110,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const {\n  user_name,\n  password\n} = loginData.invalidLogin;\n// Mengambil kredensial yang salah dari loginData.invalidLogin\nloginPage.visit();\nloginPage.login(user_name, password);\nloginPage.verifyLoginFailed();\n// Memverifikasi bahwa login GAGAL\n// Biasanya cek apakah muncul error message",
+              "err": {
+                "message": "TypeError: Cannot destructure property 'user_name' of 'loginData.invalidLogin' as it is undefined.",
+                "estack": "TypeError: Cannot destructure property 'user_name' of 'loginData.invalidLogin' as it is undefined.\n    at Context.eval (webpack:///./cypress/e2e/loginPage.cy.js:53:16)\n    at runnable.fn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146599:19)\n    at callFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165733:21)\n    at Runnable.run (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165720:7)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:171818:30)\n    at PassThroughHandlerContext.finallyHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "d52354ca-df91-4be1-9c37-21d7c32a8fcc",
+              "parentUUID": "f17e30f2-68a7-47ca-835c-7af9e8b672ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ab239d86-0ccd-4db8-9500-0435de117b56",
+            "d52354ca-df91-4be1-9c37-21d7c32a8fcc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

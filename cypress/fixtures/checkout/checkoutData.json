@@ -1,0 +1,16 @@
+{
+    "validLogin": {
+        "user_name": "standard_user",
+        "password": "secret_sauce"
+    },
+    "validCheckoutForm": {
+        "first_name": "Febrian",
+        "last_name": "Chrisna",
+        "postal_code": "12345"
+    },
+    "invalidCheckoutForm": {
+        "first_name": null,
+        "last_name": null,
+        "postal_code": null
+    }
+}
